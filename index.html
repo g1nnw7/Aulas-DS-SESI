@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱‍👤</title>
+</head>
+<body style="text-align: center;"></body>
+    <h1> Garotos de Programa🐱‍👤</h1>
+    <p>Seja um garoto de programa!</p>
+    <label for="nome">Digite seu nome:</label><br>
+
+
+    <input id="nome" type="text"placeholder="Ex: Ygu du mal">
+    <button onclick="boasVindas()">Clique aqui</button><br><br>       <!--br= enter--> <!--placeholder = texto dentro da caixa q some-->
+    <button onclick="parOuImpar()">Par ou Impar</button>
+    <script>
+        function boasVindas(){
+            let nome = document.getElementById("nome").value;
+            let ano = prompt("Bem vindo, "+nome+"! Digite seu ano de nascimento!")
+            if(2024 - ano>17){
+                alert ("Portanto você é maior de idade, pois tens "+(2024-ano)+" anos");
+            }
+            else{
+                alert ("Portanto você é menor de idade, pois tens "+(2024-ano)+" anos");
+            }
+        }
+            function parOuImpar(){
+                let n = prompt("Escreva um número!")
+                if (n % 2 ==0){
+                alert ("É par!")}
+            else {
+                alert ("É ímpar")
+            }
+
+
+        }
+    </script>
+</body>
+</html>
