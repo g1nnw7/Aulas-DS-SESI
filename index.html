@@ -5,100 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐱‍👤</title>
 </head>
-<body style="text-align: center;"></body>
-    <h1> Garotos de Programa🐱‍👤</h1>
-    <p>Seja um garoto de programa!</p>
-    <label for="nome">Digite seu nome:</label><br>
+<body style="text-align: center;">
+    <h1> Exercícios breecrowd</h1>
+    <p>Exercício 1038</p>
+    <button onclick="ex1038()">1038</button>
+    <p>Exercício 1050</p>
+    <button onclick="exddd()">1050</button>
+    <p>Exercício 1015</p>
+    <button onclick="ex1015()">1015</button>
 
 
-    <input id="nome" type="text"placeholder="Ex: Ygu du mal">
-    <button onclick="boasVindas()">Clique aqui</button><br><br>       <!--br= enter--> <!--placeholder = texto dentro da caixa q some-->
-    <button onclick="parOuImpar()">Par ou Impar</button><br><br>
-    <button onclick="volume()">Volume</button><br><br>
-    <button onclick="media()">Media</button><br><br>
-    <button onclick="conversao()">Conversor</button><br><br>
-    <button onclick="pesca()">Pesca</button>
-    <script>
-        function boasVindas(){
-            let nome = document.getElementById("nome").value;
-            let ano = prompt("Bem vindo, "+nome+"! Digite seu ano de nascimento!")
-            if(2024 - ano>17){
-                alert ("Portanto você é maior de idade, pois tens "+(2024-ano)+" anos");
-            }
-            else{
-                alert ("Portanto você é menor de idade, pois tens "+(2024-ano)+" anos");
-            }
-        }
-            function parOuImpar(){
-                let n = prompt("Escreva um número!")
-                if (n % 2 ==0){
-                alert ("É par!")}
-            else {
-                alert ("É ímpar")
-            }
-        }
-            function volume(){
-                let altura = Number(prompt("Digite a altura:"));
-                let largura = Number(prompt("Digite a largura:"));
-                let comprimento = Number(prompt("Digite o comprimento:"));
-                let volume = altura*largura*comprimento
-                alert ("O seu volume é: "+volume)
-            }
-            function media(){
-                let n1= Number(prompt("Digite a primeria nota:"));
-                let n2= Number(prompt("Digite a segunda nota:"));
-                let media = (n1+n2) / 2
-                alert ("Sua media é de: "+media)
-            }
-            function conversao(){
-                let n= prompt("Que conversão deseja fazer? \n Digite 1 para: Celsius para Fahrenheit \n Digite 2 para: Fahrenheit para Celsius \n Digite 3 para: Celsius para Kelvin \n Digite 4 para: Kelvin para Celsius \n Digite 5 para: Fahrenheit para Kelvin \n Digite 6 para: Kelvin para Fahrenheit")
-                if (n==1){
-                let t= Number(prompt("Digite a temperatura em Celsius"))
-                let r= (t*1.8)+32
-                alert ("Sua temperatura em Fahrenheit é: "+r)
-                }
-                else if (n==2) {
-                let t= Number(prompt("Digite a temperatura em Fahrenheit"))
-                let r= (t-32)*(5/9)
-                alert ("Sua temperatura em Celsius é: "+r)
-                }
-                else if (n==3) {
-                let t= Number(prompt("Digite a temperatura em Celsius"))
-                let r= t+273.15
-                alert ("Sua temperatura em Kelvin é: "+r)
-                }
-                else if (n==4) {
-                let t= Number(prompt("Digite a temperatura em Kelvin"))
-                let r= t-273.15
-                alert ("Sua temperatura em Celsius é: "+r)
-                }
-                else if (n==5) {
-                let t= Number(prompt("Digite a temperatura em Fahrenheit"))
-                let r= ((t - 32) * (5/9)) + 273.15
-                alert ("Sua temperatura em Kelvin é: "+r)
-                }
-                else if (n==6) {
-                let t= Number(prompt("Digite a temperatura em Kelvin"))
-                let r= (t - 273.15) * (9/5) + 32
-                alert ("Sua temperatura em Fahrenheit é: "+r)
-                }
-
-            }
-            function pesca(){
-                let pesopermitido = prompt("digite o peso permitido");
-            let qntdpescado = prompt("digite a quantidade pescando");
-            let multapeso = prompt("digite o valor da multa por kg a mais");
-            if(qntdpescado> pesopermitido){
-              let diferenca = qntdpescado- pesopermitido
-              let multa = diferenca*multapeso
-              alert("o peso execedeu em "+diferenca+"kg,portanto deverá pagar a multa de r$"+multa)
-            }else{
-                alert("voce esta tudo certo pode passar")
-            }
-            }
 
 
-        
-    </script>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
