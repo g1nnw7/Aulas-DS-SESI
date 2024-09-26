@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    font-family: serif;
+    background-image: url('daee8b10a8fba04a04560516bc61aded.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+button{
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    color: white;
+}
+h1{
+    color: white;
+}
