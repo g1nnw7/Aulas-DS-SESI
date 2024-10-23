@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("ohneyma.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw;
+    border-radius: 15px;
+    h1{
+        color: white;
+    }
+
+}
+.crud{
+    text-align: center;
+    width: 45vw;
+    border-radius: 15px;
+    color: white;
+}
+#adiciona{
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}
+#logar{
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}
+#edit{
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    color: black;
+}
+#delete{
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    color: black;  
+}
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 15px;
+}
