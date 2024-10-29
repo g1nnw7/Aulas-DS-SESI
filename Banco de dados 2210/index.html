@@ -13,25 +13,33 @@
             <h3>Cadastro de Usuário</h3>
             <label for="username">Nome de Usuário</label>
             <input type="text" id="username" placeholder="Ex: Murilo"><br>
+            <label for="senha">Senha do Usuário</label>
+            <input type="password" id="senha" placeholder="Ex: Abc123"><br>
             <button onclick="add()" id="adiciona">Cadastrar</button>
             
         </div>
         <div class="crud">
                 <h3>Logar</h3>
-                <label for="username">Nome de Usuário</label>
-                <input type="text" id="user" placeholder="Ex: Murilo"><br>
+                <label for="userLogin">Nome de Usuário</label>
+                <input type="text" id="userLogin" placeholder="Ex: Murilo"><br>
+                <label for="pass">Senha do Usuário</label>
+                <input type="password" id="pass" placeholder="Ex: Abc123"><br>
                 <button onclick="login()" id="logar">Entrar</button>
-        </div>
-        <div class="crud">
-            <h3>Editar</h3>
-            <label for="userEdit">Nome de Usuário</label>
-            <input type="text" id="userEdit" placeholder="Ex: Murilo"><br>
-            <button onclick="edit()" id="edit">Editar</button>
-        </div>
-        <div class="crud">
-            <h3>Remover</h3>
-            <label for="userDelete">Nome de Usuário</label>
-            <input type="text" id="userDelete" placeholder="Ex: Murilo"><br>
+            </div>
+            <div class="crud">
+                <h3>Editar</h3>
+                <label for="userEdit">Nome de Usuário</label>
+                <input type="text" id="userEdit" placeholder="Ex: Murilo"><br>
+                <label for="editPass">Senha do Usuário</label>
+                <input type="password" id="editPass" placeholder="Ex: Abc123"><br>
+                <button onclick="edit()" id="edit">Editar</button>
+            </div>
+            <div class="crud">
+                <h3>Remover</h3>
+                <label for="userDeletar">Nome de Usuário</label>
+                <input type="text" id="userDeletar" placeholder="Ex: Murilo"><br>
+                <label for="removePass">Senha do Usuário</label>
+                <input type="password" id="removePass" placeholder="Ex: Abc123"><br>
             <button onclick="remove()" id="delete">Remover</button>
         </div>
     </div>
