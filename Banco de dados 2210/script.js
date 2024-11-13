@@ -30,18 +30,17 @@ function login(){
     document.getElementById("pass").value = null;
 }
 function remove(){
-    let usuario = document.getElementById("userDeletar").value.toUpperCase();
-    let senha = document.getElementById("removePass").value;
-
-    if(autentica(usuario, senha) == false){
-        alert ("Usuário não encontrado!");
-    }
-    else {
+    let username = document.getElementById("userDelete").value.toUpperCase();
+    let pos = indexOfByTtu(username);
+    if(pos != -1){
         bancoDeDados.splice(pos, 1);
-        alert("Usuário excluído com sucesso!");
-        }
-        document.getElementById("userDelete").value = null;
+        alert(username + "foi removido com sucesso!");
     }
+    else{
+        alert (usuario + "não foi encontrado no banco de dados!");
+    }
+    document.getElementById("userDelete").value = null;
+} 
 function edit(){
     let username = document.getElementById("userEdit").value;
     
@@ -71,4 +70,11 @@ function autentica(username, password){
     }
     return false
 }
-
+function indexOfByTtu(username){
+    for(let usuario of bancoDeDados){
+        if(usuario.username == username){
+            return bancoDeDados.indexOf(usuario);
+        }
+    }
+    return -1
+}
